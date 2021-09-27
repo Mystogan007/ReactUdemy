@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const numberOfIlm = +prompt('Сколько фильмов вы уже посмотрели?','');
 const personalMovieDB = {
 count: numberOfIlm,
@@ -8,8 +10,9 @@ private: false
 };
 const a = prompt('Один из последних просмотренных фильмов?','');
 const b = prompt('а сколько оцените его?','');
+const c = prompt('Один из последних просмотренных фильмов?','');
+const d = prompt('а сколько оцените его?','');
 
-const movies = {
-    a:b
-};
-console.log('++');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
